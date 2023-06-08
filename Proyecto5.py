@@ -10,3 +10,18 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
+
+
+#Aporte OCM
+nuevas_observaciones = {
+    'Nombre de la película': ['rapidos y furiosos'],
+    'Productor': ['don Juan'],
+    'Género': ['satira']
+}
+
+df_nuevas_observaciones = pd.DataFrame(nuevas_observaciones)
+
+# Agregar las nuevas observaciones al DataFrame existente
+df = df.append(df_nuevas_observaciones, ignore_index=True)
+
+print(df)
