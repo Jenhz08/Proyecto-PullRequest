@@ -25,3 +25,14 @@ df_nuevas_observaciones = pd.DataFrame(nuevas_observaciones)
 df = df.append(df_nuevas_observaciones, ignore_index=True)
 
 print(df)
+
+#Aporte Ariana
+nuevos_datos={"Nombre": ["Orgullo y Prejuicio", "Notting Hill", "Kiki:entregas a domicilio"], 
+"Género":["romance", "romance", "anime" ],
+"Duración": ["2h07m", "2h04m", "1h42m"],
+"Puntaje Rotten Tomatoes": [88, 85, 99]}
+
+df_nuevos_datos = pd.DataFrame(nuevos_datos)
+
+df = pd.concat([df, df_nuevos_datos], ignore_index=True)
+print(df)
