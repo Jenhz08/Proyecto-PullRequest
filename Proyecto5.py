@@ -25,3 +25,14 @@ df_nuevas_observaciones = pd.DataFrame(nuevas_observaciones)
 df = df.append(df_nuevas_observaciones, ignore_index=True)
 
 print(df)
+
+#############
+### Marco ###
+#############
+nuevos_datos = {
+    'Nombre de la película': ['Green Book', 'the shawshank redemption ', 'notting hill'],
+    'Productor': ['Peter Farrelly', 'Niki Marvin', 'Duncan Kenworthy'],
+    'Género': ['Drama', 'drama', 'romantica']
+    }
+act=pd.concat([df,pd.DataFrame(nuevos_datos)],ignore_index=True)
+print(act)
